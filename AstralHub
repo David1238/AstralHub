@@ -4,16 +4,13 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Astral Gui", "Ocean")
 
 -- Tabs
-local Main = Window:NewTab("Main")
+local Script = Window:NewTab("Script")
 local Credits = Window:NewTab("Credits")
-
 -- Sections
-local MainSection = Main:NewSection("Main")
+local ScriptSection = Script:NewSection("Script")
 local CreditsSection = Credits:NewSection("Credits to Astral")
-local CreditsSection = Credits:NewSection("Join discord https://discord.gg/Z7qxBaQ9aX")
-
 -- Buttons
-MainSection:NewButton("Aimlock", "Opens aimlock", function()
+ScriptSection:NewButton("Aimlock", "Opens aimlock", function()
     _XM5trHQ4Df9Bl2N3, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
@@ -22,28 +19,47 @@ MainSection:NewButton("Aimlock", "Opens aimlock", function()
 
 end)
 
-MainSection:NewButton("Anti lock", "Z to toggle anti lock", function()
+ScriptSection:NewButton("Anti lock", "Z to toggle anti lock", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/godware123/antiaim/main/underworld'))()
 end)
 
-MainSection:NewButton("Script hub", "Opens Script hub (requires key)", function()
+ScriptSection:NewButton("Script hub", "Opens Script hub (requires key)", function()
     pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ECLIPSEXHUB/ECLIPSE-X/main/ECLIPSE%20X.txt', true))() end)
 end)
 
-MainSection:NewButton("Da hood script", "Opens a da hood script only can be used in da hood", function()
+ScriptSection:NewButton("Da hood script", "Opens a da hood script only can be used in da hood", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
 end)
 
-MainSection:NewButton("Funky friday autoplayer", "opens autoplayer", function()
+ScriptSection:NewButton("Funky friday autoplayer", "opens autoplayer", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua'))()
 end)
 
-MainSection:NewButton("Wintertime Script", "Works on all da hood games", function()
+ScriptSection:NewButton("Wintertime Script", "Works on all da hood games", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime"))()
 end)
 
-MainSection:NewButton("Prison life", "Works only on prison life", function()
+ScriptSection:NewButton("Prison life", "Works only on prison life", function()
     loadstring(game:HttpGet('https://pastebinp.com/raw/mHfK0Xk4', true))()
 end)
 
+ScriptSection:NewButton("Goal kick simulator", "Works for Goal kick simulator", function()
+    loadstring(game:HttpGet('https://thedragonslayer2.github.io'))()
+end)
+
+ScriptSection:NewButton("Universal Hub", "Idk what games", function()
+    loadstring(game:HttpGetAsync(('https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua'),true))()
+end)
+
+ScriptSection:NewButton("Fembotv4", "Fun script for roblox fortnite", function()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/ao-0/methamphetamine-solutions/main/Loader.lua')("https://discord.gg/curPv7uhQc")
+end)
+
+ScriptSection:NewButton("TbitLoader", "Idk what this is", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/tbitw2549/TbitLoader/main/Hub'))()
+end)
+
+ScriptSection:NewButton("CMX ADMIN", "Idk admin script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()
+end)
 -- Toggles
