@@ -1,14 +1,16 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
 -- Themes
-local Window = Library.CreateLib("Astral Gui", "Ocean")
+local Window = Library.CreateLib("Astral Gui", "BloodTheme")
 
 -- Tabs
 local Script = Window:NewTab("Script")
 local Credits = Window:NewTab("Credits")
+local Toggles = Window:NewTab("Toggles")
 -- Sections
 local ScriptSection = Script:NewSection("Script")
 local CreditsSection = Credits:NewSection("Credits to Astral")
+local TogglesSection = Toggles:NewSection("Toggles")
 -- Buttons
 ScriptSection:NewButton("Aimlock", "Opens aimlock", function()
     _XM5trHQ4Df9Bl2N3, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
@@ -63,3 +65,10 @@ ScriptSection:NewButton("CMX ADMIN", "Idk admin script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()
 end)
 -- Toggles
+TogglesSection:NewSlider("Walkspeed", "Chabges how fast you are", 10000, 0, function(s) -- 10000 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+-- Idk what this is
+ScriptSection:NewKeybind("Keybind", "Open and closes", Enum.KeyCode.LeftControl, function()
+	Library:ToggleUI()
+end)
