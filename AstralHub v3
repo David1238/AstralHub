@@ -4,14 +4,20 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Astral Gui", "BloodTheme")
 
 -- Tabs
-local Script = Window:NewTab("Script")
 local Credits = Window:NewTab("Credits")
+local Bedwars = Window:NewTab("Bedwars script")
+local Script = Window:NewTab("Scripts")
 local Toggles = Window:NewTab("Toggles")
 -- Sections
-local ScriptSection = Script:NewSection("Script")
-local CreditsSection = Credits:NewSection("Credits to Astral")
+local CreditsSection = Credits:NewSection("Credits to Astral all scripts dont work!")
+local BedwarsSection = Bedwars:NewSection("Bedwars scripts")
+local ScriptSection = Script:NewSection("Scripts")
 local TogglesSection = Toggles:NewSection("Toggles")
 -- Buttons
+BedwarsSection:NewButton("Vape4Roblox", "Bedwars script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua', true))()
+end)
+
 ScriptSection:NewButton("Aimlock", "Opens aimlock", function()
     _XM5trHQ4Df9Bl2N3, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
@@ -68,7 +74,7 @@ end)
 TogglesSection:NewSlider("Walkspeed", "Chabges how fast you are", 10000, 0, function(s) -- 10000 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
--- Idk what this is
+-- Keybind to toggle ui
 ScriptSection:NewKeybind("Keybind", "Open and closes", Enum.KeyCode.LeftControl, function()
 	Library:ToggleUI()
 end)
