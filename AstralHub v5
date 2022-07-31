@@ -24,7 +24,7 @@ ScriptSection:NewButton("AstralGui v2", "Beta Aimlock", function()
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/UI-Librarys/main/UI-1/UI.lua"))()
  
  
-local Window = Library:Create("Astral Gui v2","Da hood")
+local Window = Library:Create("Astral Gui v4","Da hood")
 local Tab1 = Window:Tab("Aimlocks",true)
  
 Tab1:Label("Aimlock")
@@ -650,6 +650,15 @@ ScriptSection:NewButton("CMX ADMIN", "Idk admin script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()
 end)
 
+ScriptSection:NewButton("A ware", "Idk what ware this is", function()
+	getgenv().Targetkey = "q"
+getgenv().Aimbotkey = "c"
+getgenv().HitChance = 100
+
+local Url = "https://raw.githubusercontent.com/DustysAlt/Allahware/main/Rewrite"
+
+loadstring(game:HttpGet(Url))()
+end)
 
 UniversalHubsSection:NewButton("UniversalFEScriptHub", "idk what script this is", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
