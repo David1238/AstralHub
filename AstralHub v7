@@ -7,12 +7,16 @@ local Window = Library.CreateLib("Astral Gui", "BloodTheme")
 local Credits = Window:NewTab("Credits")
 local UniversalHubs = Window:NewTab("UniversalHubs")
 local Bedwars = Window:NewTab("Bedwars script")
+local Wares = Window:NewTab("Da hood wares")
+local Dahood = Window:NewTab("Da hood")
 local Script = Window:NewTab("Scripts")
 local Toggles = Window:NewTab("Toggles")
 -- Sections
 local CreditsSection = Credits:NewSection("Credits to Astral all scripts dont work!")
 local UniversalHubsSection = UniversalHubs:NewSection("Scripts")
 local BedwarsSection = Bedwars:NewSection("Bedwars scripts")
+local DahoodSection = Dahood:NewSection("Da hood scripts")
+local WaresSection = Wares:NewSection("Da hood wares")
 local ScriptSection = Script:NewSection("Scripts")
 local TogglesSection = Toggles:NewSection("Toggles")
 -- Buttons
@@ -20,15 +24,15 @@ BedwarsSection:NewButton("Vape4Roblox", "Bedwars script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua', true))()
 end)
 
-ScriptSection:NewButton("HydraWare v2", "Works depending on the executor", function()
+WaresSection:NewButton("HydraWare v6", "Works depending on the executor", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/freshlocaliar2mgiadawdpaklsd/Fortnite-Eating/main/HydrawareRelease.txt", true))()
 end)
 
-ScriptSection:NewButton("AstralGui v2", "Beta Aimlock", function()
+WaresSection:NewButton("AstralGui v6", "Beta Aimlock", function()
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/UI-Librarys/main/UI-1/UI.lua"))()
  
  
-local Window = Library:Create("Astral Gui v6","Da hood")
+local Window = Library:Create("Astral Gui v7","Da hood")
 local Tab1 = Window:Tab("Aimlocks",true)
  
 Tab1:Label("Aimlock")
@@ -544,7 +548,7 @@ end)
  
 local Tab7 = Window:Tab("Credits",false)
  
-Tab7:Label("kermetthefrog#2591,rsalinq#4098")
+Tab7:Label("Astral#4848,rayray")
  
 local Aiming = loadstring(game:HttpGet("https://pastebin.com/raw/vsVecTqs"))()
 Aiming.TeamCheck(false)
@@ -608,7 +612,7 @@ RunService:BindToRenderStep("AimLock", 0, function()
     end)
 end)
 
-ScriptSection:NewButton("Aimlock", "Opens aimlock", function()
+DahoodSection:NewButton("Aimlock", "Opens aimlock", function()
     _XM5trHQ4Df9Bl2N3, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
@@ -617,12 +621,12 @@ ScriptSection:NewButton("Aimlock", "Opens aimlock", function()
 
 end)
 
-ScriptSection:NewButton("Anti lock", "Z to toggle anti lock", function()
+DahoodSection:NewButton("Anti lock", "Z to toggle anti lock", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/godware123/antiaim/main/underworld'))()
 end)
 
 
-ScriptSection:NewButton("Da hood script", "Opens a da hood script only can be used in da hood", function()
+DahoodSection:NewButton("Da hood script", "Opens a da hood script only can be used in da hood", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
 end)
 
@@ -630,7 +634,7 @@ ScriptSection:NewButton("Funky friday autoplayer", "opens autoplayer", function(
     loadstring(game:HttpGet('https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua'))()
 end)
 
-ScriptSection:NewButton("Wintertime Script", "Works on all da hood games", function()
+DahoodSection:NewButton("Wintertime Script", "Works on all da hood games", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime"))()
 end)
 
@@ -654,7 +658,7 @@ ScriptSection:NewButton("CMX ADMIN", "Idk admin script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()
 end)
 
-ScriptSection:NewButton("A ware", "Idk what ware this is", function()
+WaresSection:NewButton("A ware", "Idk what ware this is", function()
 	getgenv().Targetkey = "q"
 getgenv().Aimbotkey = "c"
 getgenv().HitChance = 100
