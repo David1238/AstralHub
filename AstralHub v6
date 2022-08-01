@@ -20,11 +20,15 @@ BedwarsSection:NewButton("Vape4Roblox", "Bedwars script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua', true))()
 end)
 
+ScriptSection:NewButton("HydraWare v2", "Works depending on the executor", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/freshlocaliar2mgiadawdpaklsd/Fortnite-Eating/main/HydrawareRelease.txt", true))()
+end)
+
 ScriptSection:NewButton("AstralGui v2", "Beta Aimlock", function()
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/UI-Librarys/main/UI-1/UI.lua"))()
  
  
-local Window = Library:Create("Astral Gui v4","Da hood")
+local Window = Library:Create("Astral Gui v6","Da hood")
 local Tab1 = Window:Tab("Aimlocks",true)
  
 Tab1:Label("Aimlock")
